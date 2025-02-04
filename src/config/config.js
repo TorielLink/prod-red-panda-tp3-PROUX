@@ -2,7 +2,6 @@ import 'dotenv/config'
 
 
 export const getConfigNumber = () => {
-
     let signe = process.env.SIGNED
 
     if (signe === "false" || signe !== "true")
@@ -18,6 +17,10 @@ export const getConfigNumber = () => {
 
 export const getTypeMessage = () => {
     return process.env.MESSAGE
+}
+
+export const getNumWords = () => {
+    return process.env.NUMBER_WORD
 }
 
 export const getTimeOut = () => {

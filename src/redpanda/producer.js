@@ -1,5 +1,6 @@
 import {Kafka, logLevel} from "kafkajs";
 import {getLocalBroker} from "../config/config.js";
+import 'dotenv/config'
 
 const isLocalBroker = getLocalBroker()
 const redpanda = new Kafka({
